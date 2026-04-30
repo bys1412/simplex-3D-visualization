@@ -11,6 +11,7 @@ import { solveSimplex } from './logic/simplex';
 import { calculateFeasibleVertices } from './logic/geometry';
 import { SimulationView } from './components/SimulationView';
 import { TableauDetail } from './components/TableauDetail';
+import { PasswordGate } from './components/PasswordGate';
 
 export default function App() {
   const [objCoeffs, setObjCoeffs] = useState<[number, number, number]>([3, 2, 5]);
@@ -88,6 +89,7 @@ export default function App() {
   };
 
   return (
+    <PasswordGate>
     <div className="flex h-screen bg-slate-100 text-slate-800 font-sans overflow-hidden">
       {/* Settings Panel (Left) */}
       <div className="w-80 bg-white border-r border-slate-200 flex flex-col h-full shadow-lg z-10 overflow-hidden">
@@ -332,5 +334,6 @@ export default function App() {
         )}
       </AnimatePresence>
     </div>
+    </PasswordGate>
   );
 }
