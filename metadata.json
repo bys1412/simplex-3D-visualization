@@ -1,0 +1,6 @@
+{
+  "name": "三维单纯形法可视化工具",
+  "description": "一个用于运筹学三维线性规划单纯形法教学与演示的可视化Web应用，支持自定义数据、动画演示和单纯形表详尽展示。",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
